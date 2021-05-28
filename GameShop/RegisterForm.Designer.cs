@@ -83,7 +83,7 @@ namespace GameShop
             this.panel2.Location = new System.Drawing.Point(61, 689);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(568, 9);
+            this.panel2.Size = new System.Drawing.Size(568, 4);
             this.panel2.TabIndex = 13;
             // 
             // panel1
@@ -93,7 +93,7 @@ namespace GameShop
             this.panel1.Location = new System.Drawing.Point(61, 292);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(568, 9);
+            this.panel1.Size = new System.Drawing.Size(568, 4);
             this.panel1.TabIndex = 12;
             // 
             // label1
@@ -154,7 +154,7 @@ namespace GameShop
             this.panel3.Location = new System.Drawing.Point(61, 487);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(568, 9);
+            this.panel3.Size = new System.Drawing.Size(568, 4);
             this.panel3.TabIndex = 18;
             // 
             // label3
@@ -219,6 +219,8 @@ namespace GameShop
             this.Controls.Add(this.txtBoxRegPassword);
             this.Controls.Add(this.txtBoxRegUsername);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register Yourself";

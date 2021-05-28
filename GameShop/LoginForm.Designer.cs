@@ -50,7 +50,7 @@ namespace GameShop
             this.txtBoxLoginIdentifier.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxLoginIdentifier.ForeColor = System.Drawing.Color.FloralWhite;
             this.txtBoxLoginIdentifier.Location = new System.Drawing.Point(62, 349);
-            this.txtBoxLoginIdentifier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxLoginIdentifier.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxLoginIdentifier.MaxLength = 128;
             this.txtBoxLoginIdentifier.Name = "txtBoxLoginIdentifier";
             this.txtBoxLoginIdentifier.Size = new System.Drawing.Size(568, 27);
@@ -63,7 +63,7 @@ namespace GameShop
             this.txtBoxLoginPassword.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxLoginPassword.ForeColor = System.Drawing.Color.FloralWhite;
             this.txtBoxLoginPassword.Location = new System.Drawing.Point(62, 545);
-            this.txtBoxLoginPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxLoginPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxLoginPassword.MaxLength = 32;
             this.txtBoxLoginPassword.Name = "txtBoxLoginPassword";
             this.txtBoxLoginPassword.PasswordChar = '*';
@@ -99,9 +99,9 @@ namespace GameShop
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(62, 406);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(568, 9);
+            this.panel1.Size = new System.Drawing.Size(568, 4);
             this.panel1.TabIndex = 4;
             // 
             // panel2
@@ -109,9 +109,9 @@ namespace GameShop
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Location = new System.Drawing.Point(62, 600);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(568, 9);
+            this.panel2.Size = new System.Drawing.Size(568, 4);
             this.panel2.TabIndex = 5;
             // 
             // label2
@@ -136,7 +136,7 @@ namespace GameShop
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnLogin.Location = new System.Drawing.Point(68, 698);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(563, 70);
             this.btnLogin.TabIndex = 7;
@@ -178,7 +178,8 @@ namespace GameShop
             this.Controls.Add(this.txtBoxLoginPassword);
             this.Controls.Add(this.txtBoxLoginIdentifier);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

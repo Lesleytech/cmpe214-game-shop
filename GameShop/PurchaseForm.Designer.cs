@@ -61,7 +61,7 @@ namespace GameShop
             this.panel3.Location = new System.Drawing.Point(61, 490);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(568, 9);
+            this.panel3.Size = new System.Drawing.Size(568, 4);
             this.panel3.TabIndex = 28;
             // 
             // label3
@@ -112,7 +112,7 @@ namespace GameShop
             this.panel2.Location = new System.Drawing.Point(61, 692);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(568, 9);
+            this.panel2.Size = new System.Drawing.Size(568, 4);
             this.panel2.TabIndex = 24;
             // 
             // panel1
@@ -122,7 +122,7 @@ namespace GameShop
             this.panel1.Location = new System.Drawing.Point(61, 295);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(568, 9);
+            this.panel1.Size = new System.Drawing.Size(568, 4);
             this.panel1.TabIndex = 23;
             // 
             // label2
@@ -190,6 +190,8 @@ namespace GameShop
             this.Controls.Add(this.txtBoxCardCvc);
             this.Controls.Add(this.txtBoxCardNumber);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PurchaseForm";
             this.Text = "Confirm Payment";
             this.ResumeLayout(false);
