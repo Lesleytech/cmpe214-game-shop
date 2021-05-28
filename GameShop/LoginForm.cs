@@ -21,6 +21,7 @@ namespace GameShop
         {
             RegisterForm frmRegister = new RegisterForm();
             frmRegister.Show();
+            this.Close();
         }
     }
 }

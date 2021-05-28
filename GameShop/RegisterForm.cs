@@ -21,6 +21,8 @@ namespace GameShop
         {
             LoginForm frmLogin = new LoginForm();
             frmLogin.Show();
+            this.Close();
+
         }
     }
 }
