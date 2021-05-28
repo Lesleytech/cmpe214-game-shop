@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace GameShop
 {
-    public partial class Form1 : Form
+    public partial class ProductsForm : Form
     {
-        public Form1()
+        public ProductsForm()
         {
             InitializeComponent();
+        }
+
+        private void linkLabel1_Click(object sender, EventArgs e)
+        {
+            LoginForm loginFrm = new LoginForm();
+            //loginFrm.Show();
+
+            RegisterForm regForm = new RegisterForm();
+
+            regForm.Show();
         }
     }
 }
