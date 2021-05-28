@@ -26,5 +26,11 @@ namespace GameShop
 
             regForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PurchaseForm purchaseFrm = new PurchaseForm();
+            purchaseFrm.Show();
+        }
     }
 }
