@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GameShop.Validation;
 
 namespace GameShop
 {
@@ -17,10 +18,21 @@ namespace GameShop
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnGotoLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LoginForm frmLogin = new LoginForm();
+
+            this.Close();
             frmLogin.Show();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            bool isValid = FormValidator.validateRegForm(txtBoxRegUsername, txtBoxRegEmail, txtBoxRegPassword, errorProviderRegisterForm);
+
+            if(!isValid) return;
+
+            // Continue with registration
         }
     }
 }
