@@ -55,5 +55,55 @@ namespace GameShop.Validation
 
             return true;
         }
+
+        public static bool validatePurchaseForm(TextBox txtBoxCardNumber, TextBox txtBoxCardExpDate, TextBox txtBoxCardVerCode, ErrorProvider errProvider)
+        {
+            errProvider.Clear();
+
+            if (isTextBoxEmpty(txtBoxCardNumber))
+            {
+                errProvider.SetError(txtBoxCardNumber, "Card number is required");
+                return false;
+            }
+
+            if (isTextBoxEmpty(txtBoxCardExpDate))
+            {
+                errProvider.SetError(txtBoxCardExpDate, "Card expiry date is required");
+                return false;
+            }
+
+            if (isTextBoxEmpty(txtBoxCardVerCode))
+            {
+                errProvider.SetError(txtBoxCardVerCode, "Card verification code is required");
+                return false;
+            }
+
+            return true;
+        }
+
+        public static bool validateItemForm(TextBox txtBoxName, TextBox txtBoxPrice, PictureBox picBoxGameImg, ErrorProvider errProvider)
+        {
+            errProvider.Clear();
+
+            if (isTextBoxEmpty(txtBoxName))
+            {
+                errProvider.SetError(txtBoxName, "Game name is required");
+                return false;
+            }
+
+            if (isTextBoxEmpty(txtBoxPrice))
+            {
+                errProvider.SetError(txtBoxPrice, "Game price is required");
+                return false;
+            }
+
+            if (picBoxGameImg.Image == null)
+            {
+                errProvider.SetError(picBoxGameImg, "Game image is required");
+                return false;
+            }
+
+            return true;
+        }
     }
 }
