@@ -16,5 +16,11 @@ namespace GameShop
         {
             InitializeComponent();
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            RegisterForm frmRegister = new RegisterForm();
+            frmRegister.Show();
+        }
     }
 }

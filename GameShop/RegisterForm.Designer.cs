@@ -42,6 +42,7 @@ namespace GameShop
             this.label3 = new System.Windows.Forms.Label();
             this.txtBoxRegEmail = new System.Windows.Forms.TextBox();
             this.errorProviderRegisterForm = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnLogin = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderRegisterForm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@ namespace GameShop
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(61, 819);
+            this.button1.Location = new System.Drawing.Point(61, 769);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(563, 67);
             this.button1.TabIndex = 15;
@@ -76,7 +77,7 @@ namespace GameShop
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Location = new System.Drawing.Point(61, 739);
+            this.panel2.Location = new System.Drawing.Point(61, 689);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(569, 10);
             this.panel2.TabIndex = 13;
@@ -85,7 +86,7 @@ namespace GameShop
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Location = new System.Drawing.Point(61, 341);
+            this.panel1.Location = new System.Drawing.Point(61, 291);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(569, 10);
             this.panel1.TabIndex = 12;
@@ -95,7 +96,7 @@ namespace GameShop
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(61, 623);
+            this.label1.Location = new System.Drawing.Point(61, 573);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 30);
             this.label1.TabIndex = 11;
@@ -106,7 +107,7 @@ namespace GameShop
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUsername.Location = new System.Drawing.Point(61, 218);
+            this.lblUsername.Location = new System.Drawing.Point(61, 168);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(109, 30);
             this.lblUsername.TabIndex = 10;
@@ -118,7 +119,7 @@ namespace GameShop
             this.txtBoxRegPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxRegPassword.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxRegPassword.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txtBoxRegPassword.Location = new System.Drawing.Point(61, 683);
+            this.txtBoxRegPassword.Location = new System.Drawing.Point(61, 633);
             this.txtBoxRegPassword.Name = "txtBoxRegPassword";
             this.txtBoxRegPassword.PasswordChar = '*';
             this.txtBoxRegPassword.Size = new System.Drawing.Size(568, 27);
@@ -130,7 +131,7 @@ namespace GameShop
             this.txtBoxRegUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxRegUsername.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxRegUsername.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txtBoxRegUsername.Location = new System.Drawing.Point(61, 284);
+            this.txtBoxRegUsername.Location = new System.Drawing.Point(61, 234);
             this.txtBoxRegUsername.Name = "txtBoxRegUsername";
             this.txtBoxRegUsername.Size = new System.Drawing.Size(568, 27);
             this.txtBoxRegUsername.TabIndex = 8;
@@ -139,7 +140,7 @@ namespace GameShop
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel3.Location = new System.Drawing.Point(61, 537);
+            this.panel3.Location = new System.Drawing.Point(61, 487);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(569, 10);
             this.panel3.TabIndex = 18;
@@ -149,7 +150,7 @@ namespace GameShop
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(61, 414);
+            this.label3.Location = new System.Drawing.Point(61, 364);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 30);
             this.label3.TabIndex = 17;
@@ -161,7 +162,7 @@ namespace GameShop
             this.txtBoxRegEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxRegEmail.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxRegEmail.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txtBoxRegEmail.Location = new System.Drawing.Point(61, 480);
+            this.txtBoxRegEmail.Location = new System.Drawing.Point(61, 430);
             this.txtBoxRegEmail.Name = "txtBoxRegEmail";
             this.txtBoxRegEmail.Size = new System.Drawing.Size(568, 27);
             this.txtBoxRegEmail.TabIndex = 16;
@@ -170,12 +171,25 @@ namespace GameShop
             // 
             this.errorProviderRegisterForm.ContainerControl = this;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.AutoSize = true;
+            this.btnLogin.LinkColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(56, 875);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(268, 25);
+            this.btnLogin.TabIndex = 19;
+            this.btnLogin.TabStop = true;
+            this.btnLogin.Text = "Already registered? login now";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(736, 1016);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBoxRegEmail);
@@ -210,5 +224,6 @@ namespace GameShop
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtBoxRegEmail;
         private System.Windows.Forms.ErrorProvider errorProviderRegisterForm;
+        private System.Windows.Forms.LinkLabel btnLogin;
     }
 }

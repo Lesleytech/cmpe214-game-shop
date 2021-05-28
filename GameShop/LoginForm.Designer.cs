@@ -39,6 +39,7 @@ namespace GameShop
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.errProviderLoginForm = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnRegister = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.errProviderLoginForm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,12 +137,25 @@ namespace GameShop
             // 
             this.errProviderLoginForm.ContainerControl = this;
             // 
+            // btnRegister
+            // 
+            this.btnRegister.AutoSize = true;
+            this.btnRegister.LinkColor = System.Drawing.Color.White;
+            this.btnRegister.Location = new System.Drawing.Point(63, 793);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(334, 25);
+            this.btnRegister.TabIndex = 8;
+            this.btnRegister.TabStop = true;
+            this.btnRegister.Text = "Don\'t have an account? Register now";
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(736, 1016);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
@@ -173,5 +187,6 @@ namespace GameShop
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider errProviderLoginForm;
+        private System.Windows.Forms.LinkLabel btnRegister;
     }
 }

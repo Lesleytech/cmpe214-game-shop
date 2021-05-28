@@ -16,5 +16,11 @@ namespace GameShop
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            LoginForm frmLogin = new LoginForm();
+            frmLogin.Show();
+        }
     }
 }
