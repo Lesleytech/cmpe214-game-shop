@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using GameShop.Games;
+using GameShop.Storage;
+using GameShop.Authentication;
 
 namespace GameShop
 {
@@ -19,7 +16,7 @@ namespace GameShop
 
         private void linkLabelAddGame_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            AddGameItemForm frm = new AddGameItemForm();
+            AddGameItemForm frm = new AddGameItemForm(this);
             frm.Show();
         }
 
@@ -34,33 +31,52 @@ namespace GameShop
 
 
 
-        private void populateItems()
+        public void loadGameList()
         {
-            GameListItem[] gameItems = new GameListItem[20];
+            List<Game> games = GameStorage.GetAllGames();
 
-            for (int i = 0; i < gameItems.Length; i++)
+            if (games == null)
+                return;
+
+            if (flowLayoutGameList.Controls.Count > 0)
             {
-                gameItems[i] = new GameListItem();
-                gameItems[i].GameName = "Game name";
-                gameItems[i].GameStock = "10 in stock";
-                gameItems[i].GamePrice = "$400";
-                //gameItems[i].GameId = ;
+                flowLayoutGameList.Controls.Clear();
+            }
 
-                if (flowLayoutGameList.Controls.Count < 0)
+            foreach (Game game in games)
+            {
+                GameListItem gameItem = new GameListItem(this)
                 {
-                    flowLayoutGameList.Controls.Clear();
-                }
-                else
-                {
-                    flowLayoutGameList.Controls.Add(gameItems[i]);
-                }
+                    GameId = game.gameId,
+                    GameName = game.name,
+                    GameStock = game.stock,
+                    GamePrice = game.price,
+                    GameImgLocation = game.imgPath
+                };
+               
+                flowLayoutGameList.Controls.Add(gameItem);
             }
         }
 
         private void ListRetailProductForm_Load(object sender, EventArgs e)
         {
-            populateItems();
+            loadGameList();
+        }
 
+        private void linkLabelLogout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Auth.Logout();
+
+            ProductForm frm = new ProductForm();
+
+            frm.Show();
+            this.Close();
+        }
+
+        private void ListRetailProductForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+                Application.Exit();
         }
     }
 }

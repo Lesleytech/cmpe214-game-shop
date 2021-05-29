@@ -1,26 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using GameShop.Validation;
+using GameShop.Authentication;
+using GameShop.Users;
 
 namespace GameShop
 {
     public partial class RegisterForm : Form
     {
-        public RegisterForm()
+        ProductForm _parent;
+        public RegisterForm(ProductForm parent)
         {
             InitializeComponent();
+            this._parent = parent;
         }
 
         private void btnGotoLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            LoginForm frmLogin = new LoginForm();
+            LoginForm frmLogin = new LoginForm(this._parent); 
 
             this.Close();
             frmLogin.Show();
@@ -28,11 +25,30 @@ namespace GameShop
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            bool isValid = FormValidator.validateRegForm(txtBoxRegUsername, txtBoxRegEmail, txtBoxRegPassword, errorProviderRegisterForm);
+            // ValidateRegForm checks for empty fields, already-existing accounts, and restricted usernames (admin)
+            bool isValid = FormValidator.ValidateRegForm(txtBoxRegUsername, txtBoxRegEmail, txtBoxRegPassword, errorProviderRegisterForm);
 
             if(!isValid) return;
 
             // Continue with registration
+            try
+            {
+                User user = new User
+                {
+                    username = txtBoxRegUsername.Text,
+                    email = txtBoxRegEmail.Text,
+                    password = txtBoxRegPassword.Text,
+                };
+
+                Auth.Register(user);
+
+                MessageBox.Show("Registration completed successfully.", "User registered", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnGotoLogin_LinkClicked(null, null);
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }

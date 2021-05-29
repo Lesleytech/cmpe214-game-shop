@@ -1,4 +1,6 @@
 ﻿using System.Windows.Forms;
+using GameShop.Users;
+using GameShop.Storage;
 
 namespace GameShop.Validation
 {
@@ -12,7 +14,7 @@ namespace GameShop.Validation
             return false;
         }
 
-        public static bool validateLoginForm(TextBox txtBoxIdentifier, TextBox txtBoxPassword, ErrorProvider errProvider)
+        public static bool ValidateLoginForm(TextBox txtBoxIdentifier, TextBox txtBoxPassword, ErrorProvider errProvider)
         {
             errProvider.Clear();
 
@@ -28,10 +30,30 @@ namespace GameShop.Validation
                 return false;
             }
 
+            if (txtBoxIdentifier.Text == "admin" && txtBoxPassword.Text == "admin")
+                return true;
+
+            User user = UserStorage.FindUserByEmail(txtBoxIdentifier.Text);
+
+            if (user == null)
+                user = UserStorage.FindUserByName(txtBoxIdentifier.Text);
+
+            if ( user == null)
+            {
+                errProvider.SetError(txtBoxIdentifier, "Account does not exist");
+                return false;
+            }
+
+            if(user.password != txtBoxPassword.Text)
+            {
+                errProvider.SetError(txtBoxPassword, "Password is incorrect");
+                return false;
+            }
+
             return true;
         }
 
-        public static bool validateRegForm(TextBox txtBoxUsername, TextBox txtBoxEmail, TextBox txtBoxPassword, ErrorProvider errProvider)
+        public static bool ValidateRegForm(TextBox txtBoxUsername, TextBox txtBoxEmail, TextBox txtBoxPassword, ErrorProvider errProvider)
         {
             errProvider.Clear();
 
@@ -53,10 +75,32 @@ namespace GameShop.Validation
                 return false;
             }
 
+            if (txtBoxUsername.Text.Trim().ToLower() == "admin")
+            {
+                errProvider.SetError(txtBoxUsername, "Username is restricted");
+                return false;
+            }
+
+            User user = UserStorage.FindUserByEmail(txtBoxEmail.Text);
+
+            if (user != null)
+            {
+                errProvider.SetError(txtBoxEmail, "User with this email already exist");
+                return false;
+            }
+
+            user = UserStorage.FindUserByName(txtBoxUsername.Text);
+
+            if (user != null)
+            {
+                errProvider.SetError(txtBoxUsername, "User with this username already exist");
+                return false;
+            }
+
             return true;
         }
 
-        public static bool validatePurchaseForm(TextBox txtBoxCardNumber, TextBox txtBoxCardExpDate, TextBox txtBoxCardVerCode, ErrorProvider errProvider)
+        public static bool ValidatePurchaseForm(TextBox txtBoxCardNumber, TextBox txtBoxCardExpDate, TextBox txtBoxCardVerCode, ErrorProvider errProvider)
         {
             errProvider.Clear();
 
@@ -81,7 +125,7 @@ namespace GameShop.Validation
             return true;
         }
 
-        public static bool validateItemForm(TextBox txtBoxName, TextBox txtBoxStock ,TextBox txtBoxPrice, PictureBox picBoxGameImg, ErrorProvider errProvider)
+        public static bool ValidateItemForm(TextBox txtBoxName, TextBox txtBoxStock ,TextBox txtBoxPrice, PictureBox picBoxGameImg, ErrorProvider errProvider)
         {
             errProvider.Clear();
 

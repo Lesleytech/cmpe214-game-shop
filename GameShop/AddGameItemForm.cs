@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using GameShop.Validation;
+using GameShop.Games;
+using GameShop.Storage;
 
 namespace GameShop
 {
     public partial class AddGameItemForm : Form
     {
-        public AddGameItemForm()
+        ListRetailProductForm _parent;
+        public AddGameItemForm(ListRetailProductForm parent)
         {
+            this._parent = parent;
             InitializeComponent();
         }
 
@@ -23,32 +20,59 @@ namespace GameShop
             // open file dialog
             OpenFileDialog open = new OpenFileDialog();
             // image filters
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.png)|.jpg; *.jpeg; *.png";
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.png; *.bmp)|*.jpg; *.jpeg; *.png; *.bmp";
             if (open.ShowDialog() == DialogResult.OK)
             {
                 // display image in picture box
-                picBoxAddGameImg.Image = new Bitmap(open.FileName);
-                // image file path
-                //textBox1.Text = open.FileName;
+                picBoxAddGameImg.ImageLocation = open.FileName;
+                picBoxAddGameImg.Load();
             }
         }
 
         private void txtBoxAddGamePrice_KeyPress(object sender, KeyPressEventArgs e)
         {
-            TextBoxValidator.allowOnlyNumbers(sender, e);
-        }
-
-        private void btnAddGame_Click(object sender, EventArgs e)
-        {
-            bool isValid = FormValidator.validateItemForm(txtBoxAddGameName, txtBoxAddGameStock, txtBoxAddGamePrice, picBoxAddGameImg, errProviderAddGameForm);
-
-            if (!isValid) return;
-           
+            TextBoxValidator.AllowOnlyNumbers(sender, e);
         }
 
         private void txtBoxAddGameStock_KeyPress(object sender, KeyPressEventArgs e)
         {
-            TextBoxValidator.allowOnlyNumbers(sender, e);
+            TextBoxValidator.AllowOnlyNumbers(sender, e);
+        }
+
+        private void btnAddGame_Click(object sender, EventArgs e)
+        {
+            bool isValid = FormValidator.ValidateItemForm(txtBoxAddGameName, txtBoxAddGameStock, txtBoxAddGamePrice, picBoxAddGameImg, errProviderAddGameForm);
+
+            if (!isValid) return;
+
+            string name = txtBoxAddGameName.Text;
+
+            // We are certain we have a number as we allowed only numbers in TextBox
+            // There's no need using int.TryParse()
+            int price = int.Parse(txtBoxAddGamePrice.Text);
+            int stock = int.Parse(txtBoxAddGameStock.Text);
+
+            string imgPath = picBoxAddGameImg.ImageLocation;
+
+            Game newGame = new Game { name = name, price = price, stock = stock, imgPath = imgPath };
+
+            try
+            {
+                GameStorage.AddGame(newGame);
+                
+                this._parent.loadGameList();
+                
+                MessageBox.Show($"{name} successfully added.", "Game added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                txtBoxAddGameName.Clear();
+                txtBoxAddGamePrice.Clear();
+                txtBoxAddGameStock.Clear();
+                picBoxAddGameImg.Image = null;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
