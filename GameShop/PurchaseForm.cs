@@ -13,9 +13,10 @@ namespace GameShop
 {
     public partial class PurchaseForm : Form
     {
-        public PurchaseForm()
+        public PurchaseForm(string qs)
         {
             InitializeComponent();
+            MessageBox.Show(qs);
         }
 
         private void txtBoxCardNumber_KeyPress(object sender, KeyPressEventArgs e)

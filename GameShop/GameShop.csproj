@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AddGameItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AddGameItemForm.Designer.cs">
+      <DependentUpon>AddGameItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameItem.Designer.cs">
+      <DependentUpon>GameItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameListItem.Designer.cs">
+      <DependentUpon>GameListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListRetailProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListRetailProductForm.Designer.cs">
+      <DependentUpon>ListRetailProductForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -72,9 +96,27 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateGameItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateGameItemForm.Designer.cs">
+      <DependentUpon>UpdateGameItemForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Validation\TextBoxValidator.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AddGameItemForm.resx">
+      <DependentUpon>AddGameItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameItem.resx">
+      <DependentUpon>GameItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameListItem.resx">
+      <DependentUpon>GameListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListRetailProductForm.resx">
+      <DependentUpon>ListRetailProductForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -93,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateGameItemForm.resx">
+      <DependentUpon>UpdateGameItemForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

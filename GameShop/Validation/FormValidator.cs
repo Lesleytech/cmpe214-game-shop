@@ -81,7 +81,7 @@ namespace GameShop.Validation
             return true;
         }
 
-        public static bool validateItemForm(TextBox txtBoxName, TextBox txtBoxPrice, PictureBox picBoxGameImg, ErrorProvider errProvider)
+        public static bool validateItemForm(TextBox txtBoxName, TextBox txtBoxStock ,TextBox txtBoxPrice, PictureBox picBoxGameImg, ErrorProvider errProvider)
         {
             errProvider.Clear();
 
@@ -94,6 +94,12 @@ namespace GameShop.Validation
             if (isTextBoxEmpty(txtBoxPrice))
             {
                 errProvider.SetError(txtBoxPrice, "Game price is required");
+                return false;
+            }
+
+            if (isTextBoxEmpty(txtBoxStock))
+            {
+                errProvider.SetError(txtBoxStock, "Game stock is required");
                 return false;
             }
 
