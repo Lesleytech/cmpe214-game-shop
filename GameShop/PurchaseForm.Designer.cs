@@ -50,10 +50,10 @@ namespace GameShop
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(59, 57);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(32, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 42);
+            this.label1.Size = new System.Drawing.Size(141, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "Purchase";
             // 
@@ -61,10 +61,10 @@ namespace GameShop
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel3.Location = new System.Drawing.Point(61, 489);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(33, 265);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(568, 4);
+            this.panel3.Size = new System.Drawing.Size(310, 2);
             this.panel3.TabIndex = 28;
             // 
             // label3
@@ -72,10 +72,10 @@ namespace GameShop
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(61, 367);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(33, 199);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 23);
+            this.label3.Size = new System.Drawing.Size(159, 21);
             this.label3.TabIndex = 27;
             this.label3.Text = "Card Expiration Date";
             // 
@@ -85,10 +85,10 @@ namespace GameShop
             this.txtBoxCardExpDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxCardExpDate.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxCardExpDate.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txtBoxCardExpDate.Location = new System.Drawing.Point(61, 434);
-            this.txtBoxCardExpDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxCardExpDate.Location = new System.Drawing.Point(33, 235);
+            this.txtBoxCardExpDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxCardExpDate.Name = "txtBoxCardExpDate";
-            this.txtBoxCardExpDate.Size = new System.Drawing.Size(568, 27);
+            this.txtBoxCardExpDate.Size = new System.Drawing.Size(310, 27);
             this.txtBoxCardExpDate.TabIndex = 20;
             // 
             // btnPurchase
@@ -100,10 +100,10 @@ namespace GameShop
             this.btnPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPurchase.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnPurchase.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnPurchase.Location = new System.Drawing.Point(61, 774);
-            this.btnPurchase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPurchase.Location = new System.Drawing.Point(33, 419);
+            this.btnPurchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(563, 70);
+            this.btnPurchase.Size = new System.Drawing.Size(307, 38);
             this.btnPurchase.TabIndex = 25;
             this.btnPurchase.Text = "Purchase";
             this.btnPurchase.UseVisualStyleBackColor = false;
@@ -113,20 +113,20 @@ namespace GameShop
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Location = new System.Drawing.Point(61, 692);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(33, 375);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(568, 4);
+            this.panel2.Size = new System.Drawing.Size(310, 2);
             this.panel2.TabIndex = 24;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Location = new System.Drawing.Point(61, 295);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(33, 160);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(568, 4);
+            this.panel1.Size = new System.Drawing.Size(310, 2);
             this.panel1.TabIndex = 23;
             // 
             // label2
@@ -134,10 +134,10 @@ namespace GameShop
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(61, 574);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(33, 311);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 23);
+            this.label2.Size = new System.Drawing.Size(40, 21);
             this.label2.TabIndex = 22;
             this.label2.Text = "CVC";
             // 
@@ -146,10 +146,10 @@ namespace GameShop
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUsername.Location = new System.Drawing.Point(61, 172);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Location = new System.Drawing.Point(33, 93);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(114, 23);
+            this.lblUsername.Size = new System.Drawing.Size(108, 21);
             this.lblUsername.TabIndex = 21;
             this.lblUsername.Text = "Card Number";
             // 
@@ -159,10 +159,10 @@ namespace GameShop
             this.txtBoxCardVerCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxCardVerCode.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxCardVerCode.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txtBoxCardVerCode.Location = new System.Drawing.Point(61, 637);
-            this.txtBoxCardVerCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxCardVerCode.Location = new System.Drawing.Point(33, 345);
+            this.txtBoxCardVerCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxCardVerCode.Name = "txtBoxCardVerCode";
-            this.txtBoxCardVerCode.Size = new System.Drawing.Size(568, 27);
+            this.txtBoxCardVerCode.Size = new System.Drawing.Size(310, 27);
             this.txtBoxCardVerCode.TabIndex = 21;
             this.txtBoxCardVerCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxCardVerCode_KeyPress);
             // 
@@ -172,10 +172,10 @@ namespace GameShop
             this.txtBoxCardNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxCardNumber.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxCardNumber.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txtBoxCardNumber.Location = new System.Drawing.Point(61, 236);
-            this.txtBoxCardNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxCardNumber.Location = new System.Drawing.Point(33, 128);
+            this.txtBoxCardNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBoxCardNumber.Name = "txtBoxCardNumber";
-            this.txtBoxCardNumber.Size = new System.Drawing.Size(568, 27);
+            this.txtBoxCardNumber.Size = new System.Drawing.Size(310, 27);
             this.txtBoxCardNumber.TabIndex = 19;
             this.txtBoxCardNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxCardNumber_KeyPress);
             // 
@@ -185,10 +185,10 @@ namespace GameShop
             // 
             // PurchaseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(735, 1015);
+            this.ClientSize = new System.Drawing.Size(401, 550);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBoxCardExpDate);
@@ -200,10 +200,11 @@ namespace GameShop
             this.Controls.Add(this.txtBoxCardVerCode);
             this.Controls.Add(this.txtBoxCardNumber);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PurchaseForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirm Payment";
             ((System.ComponentModel.ISupportInitialize)(this.errProviderPurchaseForm)).EndInit();
             this.ResumeLayout(false);

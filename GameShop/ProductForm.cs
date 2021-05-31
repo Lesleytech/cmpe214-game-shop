@@ -1,41 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using GameShop.Games;
+using GameShop.Storage;
+using GameShop.Authentication;
 
 namespace GameShop
 {
-    public partial class ProductsForm : Form
+    public partial class ProductForm : Form
     {
-        public ProductsForm()
+        public ProductForm()
         {
             InitializeComponent();
         }
 
-        private void linkLabel1_Click(object sender, EventArgs e)
-        {
-            LoginForm loginFrm = new LoginForm();
-            //loginFrm.Show();
-
-            ListRetailProductForm regForm = new ListRetailProductForm();
-
-            regForm.Show();
-        }
-
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    //PurchaseForm purchaseFrm = new PurchaseForm();
-        //    //purchaseFrm.Show();
-        //}
-
         private void ProductsForm_Load(object sender, EventArgs e)
         {
-            populateItems();
+            string authUsername = Auth.GetAuthUsername();
+
+            if (authUsername != null)
+            {
+                linkLblAccount.Text = $"Logout ({authUsername})";
+                this.Text = $"Games - {authUsername}";
+            }
+
+            loadGameList();
         }
 
         private string _selectedGameId;
@@ -45,29 +34,57 @@ namespace GameShop
             set { _selectedGameId = value; }
         }
 
-
-
-        private void populateItems()
+        public void loadGameList()
         {
-            GameItem[] gameItems = new GameItem[20];
+            List<Game> games = GameStorage.GetAllGames();
 
-            for(int i = 0; i < gameItems.Length; i++)
+            if (games == null) return;
+
+            if (flowLayoutAllGames.Controls.Count > 0)
             {
-                gameItems[i] = new GameItem();
-                gameItems[i].GameName = "Game name";
-                gameItems[i].GameStock = "10 in stock";
-                gameItems[i].GamePrice = "$400";
-                //gameItems[i].GameId = ;
-
-                if (flowLayoutAllGames.Controls.Count < 0)
-                {
-                    flowLayoutAllGames.Controls.Clear();
-                }
-                else
-                {
-                    flowLayoutAllGames.Controls.Add(gameItems[i]);
-                }
+                flowLayoutAllGames.Controls.Clear();
             }
+
+            foreach (Game game in games)
+            {
+                GameItem gameItem = new GameItem(this)
+                {
+                    GameId = game.gameId,
+                    GameName = game.name,
+                    GameStock = game.stock,
+                    GamePrice = game.price,
+                    GameImgLocation = game.imgPath
+                };
+
+                flowLayoutAllGames.Controls.Add(gameItem);
+            }
+        }
+
+        public LinkLabel LinkLabelAccount
+        {
+            get { return this.linkLblAccount; }
+        }
+
+        private void linkLblAccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(linkLblAccount.Text == "Account")
+            {
+                LoginForm frm = new LoginForm(this);
+
+                frm.Show();
+                return;
+            }
+
+            Auth.Logout();
+
+            linkLblAccount.Text = "Account";
+            this.Text = "Games";
+        }
+
+        private void ProductForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+                Application.Exit();
         }
     }
 }

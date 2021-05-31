@@ -57,10 +57,10 @@ namespace GameShop
             this.btnUpdateGameImgUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateGameImgUpload.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnUpdateGameImgUpload.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnUpdateGameImgUpload.Location = new System.Drawing.Point(345, 363);
-            this.btnUpdateGameImgUpload.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdateGameImgUpload.Location = new System.Drawing.Point(188, 197);
+            this.btnUpdateGameImgUpload.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateGameImgUpload.Name = "btnUpdateGameImgUpload";
-            this.btnUpdateGameImgUpload.Size = new System.Drawing.Size(296, 70);
+            this.btnUpdateGameImgUpload.Size = new System.Drawing.Size(161, 38);
             this.btnUpdateGameImgUpload.TabIndex = 54;
             this.btnUpdateGameImgUpload.Text = "Upload Image";
             this.btnUpdateGameImgUpload.UseVisualStyleBackColor = false;
@@ -69,9 +69,10 @@ namespace GameShop
             // picBoxUpdateGameImg
             // 
             this.picBoxUpdateGameImg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picBoxUpdateGameImg.Location = new System.Drawing.Point(77, 151);
+            this.picBoxUpdateGameImg.Location = new System.Drawing.Point(42, 82);
+            this.picBoxUpdateGameImg.Margin = new System.Windows.Forms.Padding(2);
             this.picBoxUpdateGameImg.Name = "picBoxUpdateGameImg";
-            this.picBoxUpdateGameImg.Size = new System.Drawing.Size(243, 282);
+            this.picBoxUpdateGameImg.Size = new System.Drawing.Size(134, 155);
             this.picBoxUpdateGameImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxUpdateGameImg.TabIndex = 53;
             this.picBoxUpdateGameImg.TabStop = false;
@@ -80,10 +81,10 @@ namespace GameShop
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel3.Location = new System.Drawing.Point(73, 795);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(40, 431);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(568, 4);
+            this.panel3.Size = new System.Drawing.Size(310, 2);
             this.panel3.TabIndex = 52;
             // 
             // lblAddGamePrice
@@ -91,10 +92,10 @@ namespace GameShop
             this.lblAddGamePrice.AutoSize = true;
             this.lblAddGamePrice.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblAddGamePrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAddGamePrice.Location = new System.Drawing.Point(73, 673);
-            this.lblAddGamePrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddGamePrice.Location = new System.Drawing.Point(40, 365);
+            this.lblAddGamePrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAddGamePrice.Name = "lblAddGamePrice";
-            this.lblAddGamePrice.Size = new System.Drawing.Size(97, 23);
+            this.lblAddGamePrice.Size = new System.Drawing.Size(92, 21);
             this.lblAddGamePrice.TabIndex = 51;
             this.lblAddGamePrice.Text = "Game Price";
             // 
@@ -104,11 +105,11 @@ namespace GameShop
             this.txtBoxUpdateGamePrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxUpdateGamePrice.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxUpdateGamePrice.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txtBoxUpdateGamePrice.Location = new System.Drawing.Point(73, 740);
-            this.txtBoxUpdateGamePrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBoxUpdateGamePrice.Location = new System.Drawing.Point(40, 401);
+            this.txtBoxUpdateGamePrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtBoxUpdateGamePrice.MaxLength = 4;
             this.txtBoxUpdateGamePrice.Name = "txtBoxUpdateGamePrice";
-            this.txtBoxUpdateGamePrice.Size = new System.Drawing.Size(568, 27);
+            this.txtBoxUpdateGamePrice.Size = new System.Drawing.Size(310, 27);
             this.txtBoxUpdateGamePrice.TabIndex = 44;
             this.txtBoxUpdateGamePrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxUpdateGamePrice_KeyPress);
             // 
@@ -121,10 +122,10 @@ namespace GameShop
             this.btnUpdateGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateGame.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnUpdateGame.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnUpdateGame.Location = new System.Drawing.Point(77, 1062);
-            this.btnUpdateGame.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdateGame.Location = new System.Drawing.Point(42, 575);
+            this.btnUpdateGame.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateGame.Name = "btnUpdateGame";
-            this.btnUpdateGame.Size = new System.Drawing.Size(563, 70);
+            this.btnUpdateGame.Size = new System.Drawing.Size(307, 38);
             this.btnUpdateGame.TabIndex = 50;
             this.btnUpdateGame.Text = "Update Game";
             this.btnUpdateGame.UseVisualStyleBackColor = false;
@@ -134,20 +135,20 @@ namespace GameShop
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Location = new System.Drawing.Point(73, 998);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(40, 541);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(568, 4);
+            this.panel2.Size = new System.Drawing.Size(310, 2);
             this.panel2.TabIndex = 49;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Location = new System.Drawing.Point(73, 601);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(40, 326);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(568, 4);
+            this.panel1.Size = new System.Drawing.Size(310, 2);
             this.panel1.TabIndex = 48;
             // 
             // lblAddGameStock
@@ -155,10 +156,10 @@ namespace GameShop
             this.lblAddGameStock.AutoSize = true;
             this.lblAddGameStock.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblAddGameStock.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAddGameStock.Location = new System.Drawing.Point(73, 880);
-            this.lblAddGameStock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddGameStock.Location = new System.Drawing.Point(40, 477);
+            this.lblAddGameStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAddGameStock.Name = "lblAddGameStock";
-            this.lblAddGameStock.Size = new System.Drawing.Size(102, 23);
+            this.lblAddGameStock.Size = new System.Drawing.Size(97, 21);
             this.lblAddGameStock.TabIndex = 47;
             this.lblAddGameStock.Text = "Game Stock";
             // 
@@ -167,10 +168,10 @@ namespace GameShop
             this.lblAddGameName.AutoSize = true;
             this.lblAddGameName.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblAddGameName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAddGameName.Location = new System.Drawing.Point(73, 478);
-            this.lblAddGameName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddGameName.Location = new System.Drawing.Point(40, 259);
+            this.lblAddGameName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAddGameName.Name = "lblAddGameName";
-            this.lblAddGameName.Size = new System.Drawing.Size(106, 23);
+            this.lblAddGameName.Size = new System.Drawing.Size(99, 21);
             this.lblAddGameName.TabIndex = 45;
             this.lblAddGameName.Text = "Game Name";
             // 
@@ -180,11 +181,11 @@ namespace GameShop
             this.txtBoxUpdateGameStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxUpdateGameStock.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxUpdateGameStock.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txtBoxUpdateGameStock.Location = new System.Drawing.Point(73, 943);
-            this.txtBoxUpdateGameStock.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBoxUpdateGameStock.Location = new System.Drawing.Point(40, 511);
+            this.txtBoxUpdateGameStock.Margin = new System.Windows.Forms.Padding(2);
             this.txtBoxUpdateGameStock.MaxLength = 4;
             this.txtBoxUpdateGameStock.Name = "txtBoxUpdateGameStock";
-            this.txtBoxUpdateGameStock.Size = new System.Drawing.Size(568, 27);
+            this.txtBoxUpdateGameStock.Size = new System.Drawing.Size(310, 27);
             this.txtBoxUpdateGameStock.TabIndex = 46;
             this.txtBoxUpdateGameStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxUpdateGameStock_KeyPress);
             // 
@@ -194,11 +195,11 @@ namespace GameShop
             this.txtBoxUpdateGameName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxUpdateGameName.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.txtBoxUpdateGameName.ForeColor = System.Drawing.Color.FloralWhite;
-            this.txtBoxUpdateGameName.Location = new System.Drawing.Point(73, 542);
-            this.txtBoxUpdateGameName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBoxUpdateGameName.Location = new System.Drawing.Point(40, 294);
+            this.txtBoxUpdateGameName.Margin = new System.Windows.Forms.Padding(2);
             this.txtBoxUpdateGameName.MaxLength = 50;
             this.txtBoxUpdateGameName.Name = "txtBoxUpdateGameName";
-            this.txtBoxUpdateGameName.Size = new System.Drawing.Size(568, 27);
+            this.txtBoxUpdateGameName.Size = new System.Drawing.Size(310, 27);
             this.txtBoxUpdateGameName.TabIndex = 43;
             // 
             // label1
@@ -206,10 +207,10 @@ namespace GameShop
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(70, 51);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(38, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 42);
+            this.label1.Size = new System.Drawing.Size(203, 41);
             this.label1.TabIndex = 42;
             this.label1.Text = "Update game";
             // 
@@ -219,10 +220,10 @@ namespace GameShop
             // 
             // UpdateGameItemForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(711, 1183);
+            this.ClientSize = new System.Drawing.Size(388, 681);
             this.Controls.Add(this.btnUpdateGameImgUpload);
             this.Controls.Add(this.picBoxUpdateGameImg);
             this.Controls.Add(this.panel3);
@@ -236,8 +237,15 @@ namespace GameShop
             this.Controls.Add(this.txtBoxUpdateGameStock);
             this.Controls.Add(this.txtBoxUpdateGameName);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UpdateGameItemForm";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateGameItemForm";
+            this.Load += new System.EventHandler(this.UpdateGameItemForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUpdateGameImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errProviderUpdateGameForm)).EndInit();
             this.ResumeLayout(false);

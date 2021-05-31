@@ -52,6 +52,8 @@
     <Compile Include="AddGameItemForm.Designer.cs">
       <DependentUpon>AddGameItemForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Authentication\Auth.cs" />
+    <Compile Include="Games\Game.cs" />
     <Compile Include="ProductForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +98,9 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Storage\GameStorage.cs" />
+    <Compile Include="Storage\StorageConfig.cs" />
+    <Compile Include="Storage\UserStorage.cs" />
     <Compile Include="UpdateGameItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +159,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Validation\FormValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Users\User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
