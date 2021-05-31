@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 using System.Linq;
@@ -123,6 +124,26 @@ namespace GameShop.Storage
             }
 
             return games;
+        }
+
+        public static void PopulateGames()
+        {
+            // Only populate the list once, that is when the file is not yet created
+            if(!File.Exists(gamesXmlFile))
+            {
+                string[] gameNames = { "Red Dead Redemption 2", "Doom Eternal", "Minecraft Dungeons", "TES 5 - Skyrim", "The Witcher - Wild Hunt", "Cyberpunk 2077", 
+                                        "Civilization 6", "Valorant", "Dota 2", "League of Legends", "Watch Dogs 2", "Saints Row 4"};
+                int[] gamePrices = { 100, 75, 150, 80, 90, 120, 140, 75, 200, 240, 85, 160 };
+
+                for (int i = 0; i < gameNames.Length; i++)
+                    AddGame(new Game
+                    {
+                        name = gameNames[i],
+                        price = gamePrices[i],
+                        stock = 10,
+                        imgPath = Path.GetFullPath(Path.Combine(System.Reflection.Assembly.GetExecutingAssembly().Location, @"..\..\..\", $@"Resources\{gameNames[i]}.png"))
+                    });     
+            }
         }
     }
 }

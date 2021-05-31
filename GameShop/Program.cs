@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using GameShop.Authentication;
+using GameShop.Storage;
 
 namespace GameShop
 {
@@ -15,6 +16,10 @@ namespace GameShop
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            // Populate the game db file
+            GameStorage.PopulateGames();
+
+            // Get the authenticated user's name from the auth_user file
             string authUsername = Auth.GetAuthUsername();
             
             // Show form according to user role
@@ -30,6 +35,7 @@ namespace GameShop
                 ProductForm productForm = new ProductForm();
                 productForm.Show();
             }
+
 
             Application.Run();
         }
