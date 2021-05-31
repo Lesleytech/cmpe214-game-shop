@@ -134,6 +134,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="PurchaseForm.resx">
       <DependentUpon>PurchaseForm.cs</DependentUpon>
@@ -162,6 +163,45 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Users\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReadDeadRedemption2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dota 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\League of Legends.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minecraft Dungeons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Dead Redemption 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TES 5 - Skyrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Witcher - Wild Hunt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Valorant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Watch Dogs 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saints Row 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Civilization 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyberpunk 2077.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doom Eternal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
